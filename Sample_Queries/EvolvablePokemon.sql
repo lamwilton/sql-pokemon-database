@@ -1,0 +1,2 @@
+SELECT * FROM pkmon
+WHERE EXISTS (SELECT * FROM evolution WHERE pkmon.PKMON_DEX = evolution.EVOLUTION_FROM);
